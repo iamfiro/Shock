@@ -28,7 +28,7 @@ export const ListItem = styled.div<ListItemProps>`
     margin: 5px 0px 5px 0px;
     background-color: ${(props) => props.selected ? props.selectedColor : '#F9FAFA'};
     &:nth-child(1) {
-        margin-top: 10px;
+        margin-top: 20px;
     }
     &:hover {
         background-color: ${(props) => props.selected ? props.selectedColor : '#eaecec'};

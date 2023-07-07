@@ -2,12 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import SideBar from '../../components/sidebar/sidebar'
 
-const Me: NextPage = () => {
+const Bot: NextPage = () => {
     return (
         <>
-        <SideBar/>
+        <SideBar route='bot' />
         </>
     )
 }
 
-export default Me
+export default Bot

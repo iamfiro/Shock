@@ -4,7 +4,7 @@ import StyledComponentsRegistry from '@/lib/styled-components/registry';
 import { RecoilRoot } from 'recoil';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import './globals.css';
-
+import { appWithTranslation } from 'next-i18next';
 
 export const metadata = {
     title: 'Create Next App',
@@ -13,7 +13,7 @@ export const metadata = {
 
 const queryClient = new QueryClient()
 
-export default function RootLayout({
+function RootLayout({
     children,
 }: {
     children: React.ReactNode
@@ -32,3 +32,5 @@ export default function RootLayout({
         </>
     )
 }
+
+export default appWithTranslation<never>(RootLayout) 

@@ -12,30 +12,20 @@ const SideBar = ({route}: IProps) => {
             <Container>
                 <ServiceIconNoText width={25} height={25} />
                 <ListWrap>
-                    <ListItem selected={route === 'index'} selectedColor="#EF7443" onClick={() => {
-                        routes.push('/@me')
-                    }}>
+                    <ListItem href={{ pathname: '/@me'}} prefetch={true} selected={route === 'index'} selectedColor="#EF7443">
                         <Image src={`/icon/sidebar/document${route === 'index' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem selected={route === 'category'} selectedColor="#e33ee9" onClick={() => {
-                        routes.push('/@me/category')
-                    }}>
+                    <ListItem href={{ pathname: '/@me/category'}} prefetch={true} selected={route === 'category'} selectedColor="#e33ee9">
                         <Image src={`/icon/sidebar/category${route === 'category' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
                     <Divider/>
-                    <ListItem selected={route === 'pomodoro'} selectedColor="#ef4343" onClick={() => {
-                        routes.push('/@me/pomodoro')
-                    }}>
+                    <ListItem href={{ pathname: '/@me/pomodoro'}} prefetch={true} selected={route === 'pomodoro'} selectedColor="#ef4343">
                         <Image src={`/icon/sidebar/alarm${route === 'pomodoro' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem selected={route === 'sound'} selectedColor="#4377ef" onClick={() => {
-                        routes.push('/@me/sound')
-                    }}>
+                    <ListItem href={{ pathname: '/@me/sound'}} prefetch={true} selected={route === 'sound'} selectedColor="#4377ef">
                         <Image src={`/icon/sidebar/sound${route === 'sound' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem selected={route === 'bot'} selectedColor="#2fcd0c" onClick={() => {
-                        routes.push('/@me/bot')
-                    }}>
+                    <ListItem href={{ pathname: '/@me/bot'}} prefetch={true} selected={route === 'bot'} selectedColor="#2fcd0c">
                         <Image src={`/icon/sidebar/bot${route === 'bot' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
                 </ListWrap>

@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
 import { ListItemProps } from './sidebar.type';
+import Link from 'next/link';
 
 export const Container = styled.nav`
     height: 100vh;
@@ -18,7 +19,7 @@ export const ListWrap = styled.div`
     margin-top: 10px;
 `
 
-export const ListItem = styled.div<ListItemProps>`
+export const ListItem = styled(Link)<ListItemProps>`
     width: 40px;
     height: 40px;
     border-radius: 7px;

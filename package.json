@@ -9,30 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@formatjs/intl-localematcher": "^0.4.0",
-    "@types/node": "20.3.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
-    "negotiator": "^0.6.3",
-    "next": "13.4.8",
-    "next-i18next": "^14.0.0",
+    "next": "13.4.9",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-intl": "^6.4.4",
-    "react-query": "^3.39.3",
-    "recoil": "^0.7.7",
-    "styled-components": "^6.0.0-rc.1",
-    "typescript": "5.1.6"
-  },
-  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
-  "main": "next.config.js",
-  "directories": {
-    "lib": "lib"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/negotiator": "^0.6.1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "@types/node": "20.4.0",
+    "@types/react": "18.2.14",
+    "eslint": "8.44.0",
+    "eslint-config-next": "13.4.9",
+    "typescript": "5.1.6"
+  }
 }

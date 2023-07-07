@@ -12,26 +12,21 @@ const SideBar = ({route}: IProps) => {
             <Container>
                 <ServiceIconNoText width={25} height={25} />
                 <ListWrap>
-                    <ListItem href={{ pathname: '/@me'}} selected={route === 'index'} selectedColor="#EF7443">
-                        <Image src={`/icon/sidebar/document.png`} width={24} height={24} alt="document" style={{ display: route === 'index' ? 'none': 'block'}} />
-                        <Image src={`/icon/sidebar/document-white.png`} width={24} height={24} alt="document" style={{ display: route === 'index' ? 'block': 'none'}} />
+                    <ListItem href={{ pathname: '/@me'}} prefetch={true} selected={route === 'index'} selectedColor="#EF7443">
+                        <Image src={`/icon/sidebar/document${route === 'index' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem href={{ pathname: '/@me/category'}} selected={route === 'category'} selectedColor="#e33ee9">
-                        <Image src={`/icon/sidebar/category.png`} width={24} height={24} alt="category" style={{ display: route === 'category' ? 'none': 'block'}} />
-                        <Image src={`/icon/sidebar/category-white.png`} width={24} height={24} alt="category" style={{ display: route === 'category' ? 'block': 'none'}} />
+                    <ListItem href={{ pathname: '/@me/category'}} prefetch={true} selected={route === 'category'} selectedColor="#e33ee9">
+                        <Image src={`/icon/sidebar/category${route === 'category' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
                     <Divider/>
-                    <ListItem href={{ pathname: '/@me/pomodoro'}} selected={route === 'pomodoro'} selectedColor="#ef4343">
-                        <Image src={`/icon/sidebar/alarm.png`} width={24} height={24} alt="pomodoro" style={{ display: route === 'pomodoro' ? 'none': 'block'}} />
-                        <Image src={`/icon/sidebar/alarm-white.png`} width={24} height={24} alt="pomodoro" style={{ display: route === 'pomodoro' ? 'block': 'none'}} />
+                    <ListItem href={{ pathname: '/@me/pomodoro'}} prefetch={true} selected={route === 'pomodoro'} selectedColor="#ef4343">
+                        <Image src={`/icon/sidebar/alarm${route === 'pomodoro' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem href={{ pathname: '/@me/sound'}} selected={route === 'sound'} selectedColor="#4377ef">
-                        <Image src={`/icon/sidebar/sound.png`} width={24} height={24} alt="sound" style={{ display: route === 'sound' ? 'none': 'block'}} />
-                        <Image src={`/icon/sidebar/sound-white.png`} width={24} height={24} alt="sound" style={{ display: route === 'sound' ? 'block': 'none'}} />
+                    <ListItem href={{ pathname: '/@me/sound'}} prefetch={true} selected={route === 'sound'} selectedColor="#4377ef">
+                        <Image src={`/icon/sidebar/sound${route === 'sound' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
-                    <ListItem href={{ pathname: '/@me/bot'}} selected={route === 'bot'} selectedColor="#2fcd0c">
-                        <Image src={`/icon/sidebar/bot.png`} width={24} height={24} alt="bot" style={{ display: route === 'bot' ? 'none': 'block'}} />
-                        <Image src={`/icon/sidebar/bot-white.png`} width={24} height={24} alt="bot" style={{ display: route === 'bot' ? 'block': 'none'}} />
+                    <ListItem href={{ pathname: '/@me/bot'}} prefetch={true} selected={route === 'bot'} selectedColor="#2fcd0c">
+                        <Image src={`/icon/sidebar/bot${route === 'bot' ? '-white' : ''}.png`} width={24} height={24} alt="home" />
                     </ListItem>
                 </ListWrap>
             </Container>

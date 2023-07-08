@@ -2,7 +2,12 @@
     --color-gray-border: #e7e7e7;
     --color-sidebar-title: #636874;
     
-    --font-pretendard: 'Pretendard-Regular';
+    --boxshadow-gray: 0px 2px 0px #96969620;
+
+    --font-notosans: 'Noto Sans KR';
+	--font-pretendard: 'Pretendard-Regular';
+	--font-gmarket: 'GmarketSansMedium';
+	--font-lineseed: 'LINESeedKR-Bd';
 }
 
 html,
@@ -28,5 +33,19 @@ a {
     font-family: 'Pretendard-Regular';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeedKR-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }

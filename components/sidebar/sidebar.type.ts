@@ -1,6 +1,6 @@
 export interface ListItemProps {
     selected: boolean
-    selectedColor: string
+    selectedcolor: string
 }
 
 export interface IProps {

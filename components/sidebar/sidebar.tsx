@@ -15,7 +15,7 @@ const SideBar = ({ route }: IProps) => {
           <ListItem
             href={{ pathname: "/@me" }}
             selected={route === "index"}
-            selectedColor="#EF7443"
+            selectedcolor="#EF7443"
           >
             <Image
               priority
@@ -30,7 +30,7 @@ const SideBar = ({ route }: IProps) => {
           <ListItem
             href={{ pathname: "/@me/category" }}
             selected={route === "category"}
-            selectedColor="#e33ee9"
+            selectedcolor="#e33ee9"
           >
             <Image
               priority
@@ -46,7 +46,7 @@ const SideBar = ({ route }: IProps) => {
           <ListItem
             href={{ pathname: "/@me/pomodoro" }}
             selected={route === "pomodoro"}
-            selectedColor="#ef4343"
+            selectedcolor="#ef4343"
           >
             <Image
               priority
@@ -61,7 +61,7 @@ const SideBar = ({ route }: IProps) => {
           <ListItem
             href={{ pathname: "/@me/sound" }}
             selected={route === "sound"}
-            selectedColor="#4377ef"
+            selectedcolor="#4377ef"
           >
             <Image
               priority
@@ -76,7 +76,7 @@ const SideBar = ({ route }: IProps) => {
           <ListItem
             href={{ pathname: "/@me/bot" }}
             selected={route === "bot"}
-            selectedColor="#2fcd0c"
+            selectedcolor="#2fcd0c"
           >
             <Image
               priority

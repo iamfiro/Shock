@@ -30,12 +30,12 @@ export const ListItem = styled(Link)<ListItemProps>`
     align-items: center;
     justify-content: center;
     margin: 5px 0px 5px 0px;
-    background-color: ${(props) => props.selected ? props.selectedColor : '#F9FAFA'};
+    background-color: ${(props) => props.selected ? props.selectedcolor : '#F9FAFA'};
     &:nth-child(1) {
         margin-top: 20px;
     }
     &:hover {
-        background-color: ${(props) => props.selected ? props.selectedColor : '#eaecec'};
+        background-color: ${(props) => props.selected ? props.selectedcolor : '#eaecec'};
         cursor: ${(props) => props.selected ? '' : 'pointer'};
     }
 `

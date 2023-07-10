@@ -3,19 +3,23 @@ import Head from 'next/head'
 import SideBar from '../../components/sidebar/sidebar'
 import { IndexContainer, SnsContainer, SnsWrap, Title } from '../../components/page/@me/index.style'
 import SNS from '../../components/sns/sns'
+import AccountList from '../../components/accountList/AccountList'
 
 const Me: NextPage = () => {
     return (
         <>
         <IndexContainer>
             <SideBar route='index'/>
-            <SnsContainer>
+            {/* <SnsContainer>
                 <Title>Shock 메모</Title>
                 <SnsWrap>
                     <SNS>
                         s
                     </SNS>
                 </SnsWrap>
+            </SnsContainer> */}
+            <SnsContainer>
+                <AccountList></AccountList>
             </SnsContainer>
         </IndexContainer>
         </>

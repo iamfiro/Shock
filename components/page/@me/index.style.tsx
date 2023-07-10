@@ -12,10 +12,12 @@ export const Title = styled.span`
     font-family: var(--font-lineseed);
 `
 
-export const SnsContainer = styled.div`
-    margin: 30px 40px;
-`
-
 export const SnsWrap = styled.div`
     margin: 10px 00px;
+`
+
+export const SnsContainer = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
 `

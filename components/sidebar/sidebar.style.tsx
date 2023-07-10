@@ -11,7 +11,7 @@ export const Container = styled.nav`
     background-color: #f9fafa;
     padding: 25px;
     border: 1px solid var(--color-gray-border);
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
 `

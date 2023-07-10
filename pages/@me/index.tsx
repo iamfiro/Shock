@@ -5,21 +5,35 @@ import { IndexContainer, SnsContainer, SnsWrap, Title } from '../../components/p
 import SNS from '../../components/sns/sns'
 import AccountList from '../../components/accountList/AccountList'
 
+const n = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+
 const Me: NextPage = () => {
     return (
         <>
         <IndexContainer>
             <SideBar route='index'/>
-            {/* <SnsContainer>
-                <Title>Shock 메모</Title>
-                <SnsWrap>
-                    <SNS>
-                        s
-                    </SNS>
-                </SnsWrap>
-            </SnsContainer> */}
             <SnsContainer>
-                <AccountList></AccountList>
+                <SnsWrap>
+                    {
+                        n.map((n:any) => {
+                            return (
+                                <SNS 
+                                UserId='KimchiWarrior' 
+                                UserName='김치말이' 
+                                ImgUrl='/sample/profileImage.jpg'
+                                heartCount={1200}
+                                commentCount={12}
+                                retweetCount={832}
+                                key={Math.random()}
+                            >
+                                
+                            </SNS>
+                            )
+                        })
+                          
+                    }
+                </SnsWrap>
+                <AccountList/>
             </SnsContainer>
         </IndexContainer>
         </>

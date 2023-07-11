@@ -1,10 +1,14 @@
 import { styled } from "styled-components";
 import Image from 'next/image'
+
 export const Container = styled.div`
-    width: 300px;
+    width: 350px;
     height: 300px;
     background-color: #fff;
     padding: 40px 30px;
+    position: sticky;
+    top: 0;
+    right: 0;
 `
 
 export const Top = styled.div`
